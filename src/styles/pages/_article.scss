@@ -1,11 +1,13 @@
 #article {
+
   .blog-main-image {
     margin: auto;
     max-height: 14em;
   }
+
   p {
-    color: #5d6d77;
-    font-size: .95em;
+    color: $text-color;
+    font-size: 0.95em;
     margin: 1em 0;
     line-height: 1.8;
     font-weight: 400;
@@ -13,12 +15,14 @@
   }
 
   pre {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
-  h2, h3, h4 {
+  h2,
+  h3,
+  h4 {
     font-family: $lato;
-    color: #34495e;
+    color: $gray;
   }
 
   h2 {
@@ -36,44 +40,47 @@
   .avatar {
     max-width: 25px;
     border-radius: 100%;
-    border: 1px solid #e0e0e0;
+    border: 1px solid $gray-ef;
   }
 
   #page-content {
     .container {
-      border-bottom: 1px solid #efefef;
-      padding-bottom: 50px;
-      padding-top: 50px;
+      border-bottom: 1px solid $gray-ef;
+      padding-bottom: 50;
+      padding-top: 50;
     }
   }
 
   #email-subscribe {
     .container {
-      border-bottom: 1px solid #efefef;
+      border-bottom: 1px solid $gray-ef;
       padding-bottom: 25px;
       padding-top: 25px;
     }
 
     a {
+
       font-weight: 300;
-      color: #459CE7;
+      color: $brand-primary-dark;
+
+      &:hover {
+        text-decoration: none;
+      }
+
       i {
-        color: #FFCC4F;
+        color: $brand-warning;
         margin-right: 25px;
         margin-left: 25px;
       }
     }
 
-    a:hover {
-      text-decoration: none;
-    }
   }
 
   #main-pic {
     .container {
-      border-bottom: 1px solid #efefef;
-      padding-bottom: 50px;
-      padding-top: 50px;
+      border-bottom: 1px solid $gray-ef;
+      padding-bottom: 50;
+      padding-top: 50;
     }
   }
 

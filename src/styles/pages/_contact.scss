@@ -1,14 +1,16 @@
 #contact {
   #map {
-    min-height: 700px;
-    max-height: 1000px;
+    min-height: 700;
+    max-height: 1000;
   }
 
   .message {
     form {
-      input.form-control {
-        color: #777;
-        font-weight: 300;
+      input {
+        .form-control {
+          color: $gray-light;
+          font-weight: 300;
+        }
       }
     }
   }
@@ -20,12 +22,13 @@
           padding-right: 0;
           border: none;
         }
-        padding-right: 100px;
-        border-right: 1px solid #efefef;
+        padding-right: 100;
+        border-right: 1px solid $gray-ef;
         padding-bottom: 2em;
       }
+
       .map {
-        padding-left: 40px;
+        padding-left: 40;
         padding-top: 2em;
         padding-bottom: 2em;
       }
@@ -36,10 +39,11 @@
 #contact-thanks {
   #rockout {
     .container {
-      padding-bottom: 40px;
-      padding-top: 40px;
-      border-bottom: 1px solid #efefef;
+      padding-bottom: 40;
+      padding-top: 40;
+      border-bottom: 1px solid $gray-ef;
     }
+
     img {
       margin-top: 25px;
       margin-bottom: 25px;

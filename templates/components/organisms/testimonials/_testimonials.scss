@@ -1,32 +1,33 @@
 #testimonials {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 40;
+  padding-bottom: 40;
   -webkit-font-smoothing: antialiased;
-  background-color: #4BB5DD;
+  background-color: $brand-primary;
 
   .header {
     text-align: center;
 
     h3 {
       font-family: $lato;
-      color: #FFFFFF;
+      color: $white;
       line-height: 25px;
       margin-bottom: 45px;
 
       a {
-        color: #FFFFFF;
+        color: $white;
       }
 
       @media(max-width: 991px) {
-        line-height: 50px;
+        line-height: 50;
       }
     }
   }
+
   .testimonial {
     width: 90%;
 
     @media (max-width: 767px) {
-      float: none !important;
+      float: none;
       margin: 0 auto;
       margin-bottom: 45px;
     }

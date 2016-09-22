@@ -1,25 +1,27 @@
 #stats {
   .stats {
-    margin-top: 60px;
+    margin-top: 60;
     font-size: 16px;
-    color: #757575;
+    color: $gray;
+
     strong {
-      font-size: 30px;
-      color: #656565;
+      font-size: 30;
+      color: $gray-dark;
       font-weight: 500;
       position: relative;
       top: 1px;
       margin-right: 5px;
       display: block;
     }
+
     .col-sm-3 {
-      border-bottom: 1px solid #efefef;
+      border-bottom: 1px solid $gray-ef;
       padding-bottom: 25px;
       text-align: center;
 
       @media(max-width: 767px) {
-        padding-bottom: 10px;
-        margin-bottom: 20px;
+        padding-bottom: 10;
+        margin-bottom: 20;
       }
     }
   }

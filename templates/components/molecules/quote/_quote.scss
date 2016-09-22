@@ -2,14 +2,14 @@
 
   font-size: 13px;
   line-height: 24px;
-  background-color: #72C8E9;
+  background-color: $brand-primary-light;
   padding: 12px 22px;
   border-radius: 6px;
   width: 90%;
   position: relative;
 
   p {
-    color: #FFF;
+    color: $white;
     font-weight: 500;
     line-height: 2em;
   }
@@ -21,16 +21,18 @@
   .arrow-down {
     position: absolute;
     bottom: 3px;
-    left: 30px;
+    left: 30;
 
-    .arrow, .arrow-border {
-      border-color: #72C8E9 transparent transparent;
+    .arrow,
+    .arrow-border {
+      border-color: $brand-primary-light transparent transparent;
       border-style: solid;
       border-width: 11px;
       position: absolute;
       top: 3px;
       z-index: 1002;
     }
+
     .arrow-border {
       border-width: 12px;
       top: 3px;
@@ -39,9 +41,10 @@
     }
   }
 }
+
 .quote-author {
-  margin-top: 40px;
-  margin-left: 10px;
+  margin-top: 40;
+  margin-left: 10;
 
   @media (max-width: 767px) {
     margin-left: 6%;
@@ -50,21 +53,23 @@
   .pic {
     width: 71px;
     height: 71px;
-    border-radius: 50px;
+    border-radius: 50;
     float: left;
     position: relative;
     top: -12px;
     margin-right: 18px;
-    border: 1px solid #ccc;
+    border: 1px solid $gray-efef;
   }
+
   .name {
-    color: #FFFFFF;
+    color: $white;
     line-height: 23px;
     font-weight: 500;
   }
+
   .company {
     font-size: 14px;
-    color: #ACE2F7;
+    color: $brand-primary-lighter;
     line-height: 23px;
     font-weight: 400;
   }

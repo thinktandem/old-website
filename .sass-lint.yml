@@ -1,0 +1,50 @@
+#########################
+## Sass Lint File
+#########################
+
+# File Options
+files:
+  include:
+    - 'src/**/*.s+(a|c)ss'
+    - 'templates/**/**/**/*.s+(a|c)ss'
+  ignore:
+    - 'assets/vendor/**/*.*'
+    - 'node_modules/**/*.*'
+    - 'bower_components/**/*.*'
+
+# Rule Configuration
+rules:
+  no-vendor-prefixes: 0
+  placeholder-in-extend: 0
+  no-css-comments: 0
+  leading-zero:
+    - 2
+    - include: true
+  nesting-depth:
+    - 2
+    - max-depth: 5
+  border-zero:
+    - 2
+    - convention: none
+  no-ids: 0
+  force-element-nesting: 0
+  property-sort-order:
+    - 2
+    - order: smaccs
+  class-name-format:
+    - 2
+    - convention: hyphenatedbem
+  no-color-literals:
+    - 2
+    - allow-rgba: true
+  mixin-name-format:
+    - 2
+    - convention: ^[-_aA-zZ]+$
+  no-duplicate-properties:
+    - 2
+    - exclude:
+      - background
+  placeholder-name-format:
+    - 2
+    - convention: ^[-_aA-zZ]+$
+

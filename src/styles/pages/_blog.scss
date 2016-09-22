@@ -1,29 +1,32 @@
 #posts {
+
   -webkit-font-smoothing: antialiased;
   margin-top: 55px;
 
   .pages {
-    border-top: 1px solid #efefef;
+    border-top: 1px solid $gray-ef;
     padding-top: 25px;
     padding-bottom: 25px;
     @media(max-width: 991px) {
       text-align: center;
     }
 
-    .pagination > li > a, .pagination > li > span {
-      margin-right: 10px;
+    .pagination > li > a,
+    .pagination > li > span {
+      margin-right: 10;
       border-radius: 100%;
       padding: 4px 12px;
     }
+
     .active {
-      background-color: #4BB5DD;
+      background-color: $brand-primary;
     }
   }
 
   .sidebar {
-    border-left: 1px solid #efefef;
+    border-left: 1px solid $gray-ef;
     @media(max-width: 991px) {
-      margin-top: 70px;
+      margin-top: 70;
       text-align: center;
     }
   }

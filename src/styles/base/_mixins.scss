@@ -1,8 +1,7 @@
-@mixin font-face($font-family, $file-path, $weight: normal, $style: normal ) {
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
   @font-face {
     font-family: $font-family;
-    src:
-      url('#{$file-path}.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: url('#{$file-path}.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     font-weight: $weight;
     font-style: $style;
     font-stretch: none;
@@ -42,9 +41,9 @@
   Stolen gratuitously from https://css-tricks.com/glitch-effect-text-images-svg/
 */
 
-@mixin textGlitch($name, $intensity, $textColor, $background, $highlightColor1, $highlightColor2, $width, $height, $timing1: 3s, $timing2: 4s) {
+@mixin textGlitch($name, $intensity, $textcolor, $background, $highlightcolor1, $highlightcolor2, $width, $height, $timing1: 3s, $timing2: 4s) {
 
-  color: $textColor;
+  color: $textcolor;
   position: relative;
   $steps: $intensity;
 
@@ -54,7 +53,7 @@
     @for $i from 1 through 2 {
       @keyframes #{$name}-anim-#{$i} {
         @for $i from 0 through $steps {
-          #{percentage($i*(1/$steps))} {
+          #{percentage($i * (1/$steps))} {
             clip: rect(
               random($height)+px,
               $width+px,
@@ -66,8 +65,9 @@
       }
     }
   }
-  &:before,
-  &:after {
+
+  &::before,
+  &::after {
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -76,14 +76,16 @@
     background: $background;
     clip: rect(0, 0, 0, 0);
   }
-  &:after {
+
+  &::after {
     left: 2px;
-    text-shadow: -1px 0 $highlightColor1;
+    text-shadow: -1px 0 $highlightcolor1;
     animation: #{$name}-anim-1 $timing1 infinite linear alternate-reverse;
   }
-  &:before {
+
+  &::before {
     left: -2px;
-    text-shadow: 1px 0 $highlightColor2;
+    text-shadow: 1px 0 $highlightcolor2;
     animation: #{$name}-anim-2 $timing2 infinite linear alternate-reverse;
   }
 
@@ -91,23 +93,23 @@
 
 @mixin transition($transitions) {
   -webkit-transition: $transitions;
-    -moz-transition: $transitions;
-    -ms-transition: $transitions;
-    -o-transition: $transitions;
-    transition: $transitions;
+  -moz-transition: $transitions;
+  -ms-transition: $transitions;
+  -o-transition: $transitions;
+  transition: $transitions;
 }
 
 /* this mixin makes possible to add transition to a specific vendor, example: */
 /* -webkit-transition: -webkit-transform 0.5s linear; */
 @mixin transitionPrefix($property, $values) {
   -webkit-transition: -webkit-#{$property} #{$values};
-    -moz-transition: -moz-#{$property} #{$values};
-    -ms-transition: -ms-#{$property} #{$values};
-    -o-transition: -o-#{$property} #{$values};
-    transition: #{$property} #{$values};  
+  -moz-transition: -moz-#{$property} #{$values};
+  -ms-transition: -ms-#{$property} #{$values};
+  -o-transition: -o-#{$property} #{$values};
+  transition: #{$property} #{$values};
 }
 
-@mixin background-gradient($from, $to) {
+@mixin backgroundGradient($from, $to) {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $from), color-stop(100%,  $to));
   background: -webkit-linear-gradient($from, $to);
   background: -moz-linear-gradient($from, $to);
@@ -127,7 +129,7 @@
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}
   &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}  
+  &:-ms-input-placeholder      {@content}
 }
 
 @mixin animation($animations) {
@@ -147,16 +149,16 @@
 }
 
 @mixin keyFrame($name) {
-  @-webkit-keyframes $name{
+  @-webkit-keyframes $name {
     @content
   }
-  @-moz-keyframes $name{
+  @-moz-keyframes $name {
     @content
   }
-  @-o-keyframes $name{
+  @-o-keyframes $name {
     @content
   }
-  @keyframes $name{
+  @keyframes $name {
     @content
   }
 }

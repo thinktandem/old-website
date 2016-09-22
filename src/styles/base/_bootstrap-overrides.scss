@@ -1,11 +1,11 @@
-@media (min-width: 1200px) {
+@media (min-width: 1200) {
   .container {
-    width: 970px;
+    width: 970;
   }
 }
 
 a {
-  color: #459CE7;
+  color: $brand-primary-dark;
 }
 
 p {
@@ -19,56 +19,69 @@ p {
 
 .pagination>.active {
   >a,
-  >span,
-  >a:hover,
-  >span:hover,
-  >a:focus,
-  >span:focus {
+  >span {
     background-color: $brand-primary;
     border-color: $brand-success;
+
+    &:focus {
+      background-color: $brand-primary;
+      border-color: $brand-success;
+    }
+
+    &:hover {
+      background-color: $brand-primary;
+      border-color: $brand-success;
+    }
   }
 }
+
 .pagination>li>a,
 .pagination>li>span {
   @include transition(all 0.25s linear);
 }
 
+@include transition(all 0.2s linear);
+
 .btn-primary {
+  border: none;
   background: $brand-primary;
-  color: #FFF;
+  color: $white;
   font-family: Lato;
   letter-spacing: 0.7px;
-  @include transition(all .2s linear);
+
   &:hover {
     text-decoration: none;
     background: $brand-success;
     border: none;
   }
-  border: none;
+
 }
 
 .btn {
   border-radius: 5px;
   font-weight: 300;
   text-transform: uppercase;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
 }
+
+@include transition(all 0.2s linear);
 
 .btn-secondary {
   background: $brand-success;
-  color: #FFF;
+  color: $white;
   font-family: Lato;
   text-transform: uppercase;
-  @include transition(all .2s linear);
+
   &:hover {
     text-decoration: none;
-    background: #C2EFEB;
+    background: $brand-primary-light;
   }
 }
 
-
-.navbar.hero .navbar-nav > li > a:hover {
-  background: none;
+.navbar.hero .navbar-nav > li > a {
+  &:hover {
+    background: none;
+  }
 }
 
 @media (min-width: 768px) {

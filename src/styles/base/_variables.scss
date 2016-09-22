@@ -6,16 +6,32 @@ $gray-darker:             lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:               lighten($gray-base, 20%) !default;   // #333
 $gray:                    lighten($gray-base, 33.5%) !default; // #555
 $gray-light:              lighten($gray-base, 46.7%) !default; // #777
+$gray-ef:                 #efefef !default;
 $gray-lighter:            lighten($gray-base, 93.5%) !default; // #eee
+$white:                   #fff !default;
 
-$brand-primary:           #4BB5DD !default;
-$brand-success:           #3FD8DF !default;
+$brand-primary:           #4bb5dd !default;
+$brand-primary-dark:      #459ce7 !default;
+$brand-primary-darker:    #078abc !default;
+$brand-primary-light:     #72c8e9 !default;
+$brand-primary-lighter:   #ace2f7 !default;
+$brand-secondary:         #72f0a1 !default;
+$brand-success:           #3fd8df !default;
 $brand-info:              #5bc0de !default;
-$brand-warning:           #f0ad4e !default;
+$brand-warning:           #ffcc4f !default;
 $brand-danger:            #d9534f !default;
 
+$international-orange:    #ff4f00 !default;
+
+$hexagon-red:             #ff8e79 !default;
+$hexagon-orange:          #ffcc4f !default;
+$hexagon-yellow:          #ffec79 !default;
+$hexagon-green:           #72f0a1 !default;
+$hexagon-blue:            #75caed !default;
+$hexagon-violet:          #4bb5dd !default;
+
 $font-size-base:          22px !default;
-$text-color:              #6C7279 !default;
+$text-color:              #5d6d77 !default;
 
 $font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
 $font-size-h2:            2em !default;
@@ -32,4 +48,4 @@ $code-color:              inherit;
 $code-bg:                 #232323;
 $pre-color:               inherit;
 $pre-bg:                  #232323;
-$pre-border-color:        slategray;
+$pre-border-color:        #708090;

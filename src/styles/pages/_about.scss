@@ -1,29 +1,30 @@
 #info {
 
   .container {
-    border-bottom: 1px solid #efefef;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    border-bottom: 1px solid $gray-ef;
+    padding-bottom: 50;
+    padding-top: 50;
   }
+
 }
 
 #staff {
 
-  padding-top: 50px;
+  padding-top: 50;
 
   h3 {
     font-family: $lato;
-    color: #333;
+    color: $gray-dark;
     line-height: 25px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 50;
+    margin-bottom: 50;
 
     a {
-      color: #FFFFFF;
+      color: $white;
     }
 
     @media(max-width: 991px) {
-      line-height: 50px;
+      line-height: 50;
     }
   }
 

@@ -1,26 +1,30 @@
 .service {
 
-  border-bottom: 1px solid #EFEFEF;
+  border-bottom: 1px solid $gray-ef;
   padding-top: 25px;
 
-  a:hover {
-    text-decoration: none;
-  }
-
-  .icon-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
-    small {
-      font-size: .8em;
-      padding-top: 10px;
-      color: #ccc;
-      display: block;
+  a {
+    &:hover {
+      text-decoration: none;
     }
   }
 
+  .icon-wrapper {
+    padding-left: 10;
+    padding-right: 10;
+
+    small {
+      font-size: 0.8em;
+      padding-top: 10;
+      color: $gray-light;
+      display: block;
+    }
+
+  }
+
   .icon-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50;
+    padding-bottom: 50;
   }
 
   .custom-icon {
@@ -29,16 +33,14 @@
       font-size: 3em;
       margin: auto;
       display: inline-block;
-      border-radius: 70px;
-      padding: 10px;
+      padding: 10;
       background: transparent;
-      padding: 10px;
       -webkit-border-radius: 1100%;
       -moz-border-radius: 100%;
       -o-border-radius: 100%;
       border-radius: 100%;
-      border: 0;
-      color: #fff;
+      border: none;
+      color: $white;
 
       @media (max-width: 767px) {
         padding: 8px;
@@ -49,36 +51,41 @@
 
   .red {
     @extend .custom-icon;
+
     i {
-      background: #FF8E79;
+      background: $hexagon-red;
     }
   }
 
   .orange {
     @extend .custom-icon;
+
     i {
-      background: #FFCC4F;
+      background: $hexagon-orange;
     }
   }
 
   .yellow {
     @extend .custom-icon;
+
     i {
-      background: #FFEC79;
+      background: $hexagon-yellow;
     }
   }
 
   .green {
     @extend .custom-icon;
+
     i {
-      background: #72F0A1;
+      background: $hexagon-green;
     }
   }
 
   .blue {
     @extend .custom-icon;
+
     i {
-      background: #75CAEB;
+      background: $hexagon-blue;
     }
   }
 

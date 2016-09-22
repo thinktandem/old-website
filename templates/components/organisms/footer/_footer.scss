@@ -1,15 +1,15 @@
 #footer {
-  background: #4BB5DD;
+  background: $brand-primary;
   -webkit-font-smoothing: antialiased;
 
   @media(max-width: 991px) {
-    padding-top: 30px;
+    padding-top: 30;
   }
 
   .credits {
-    color: #FFFFFF;
+    color: $white;
     font-size: 13px;
     text-align: center;
-    padding: 20px;
+    padding: 20;
   }
 }

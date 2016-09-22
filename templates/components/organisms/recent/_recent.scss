@@ -3,34 +3,36 @@
   padding-bottom: 3em;
 
   p {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .title {
     a {
       margin-top: 0;
       font-family: $lato;
-      color: #459CE7;
+      color: $brand-primary-dark;
       line-height: 25px;
       font-weight: 300;
       font-size: 1.4em;
-    }
-    a:hover {
-      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+
     }
   }
 
   .author {
-    font-size: .75em;
-    color: #777;
+    font-size: 0.75em;
+    color: $gray-light;
     margin-top: 8px;
+
     .avatar {
       margin-right: 5px;
       max-width: 25px;
       border-radius: 100%;
-      border: 1px solid #e0e0e0;
+      border: 1px solid $gray-efef;
     }
   }
-
 
 }

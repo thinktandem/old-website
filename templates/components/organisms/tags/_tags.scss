@@ -1,16 +1,20 @@
 #tags {
+
   .container {
     padding-bottom: 2em;
     padding-top: 2em;
   }
+
   .label {
-    background: #FF8E79;
-    color: #FFFFFF;
-    padding: 10px;
+    background: $hexagon-red;
+    color: $white;
+    padding: 10;
     margin: 5px;
     display: inline-block;
+
     a {
-      color: #FFFFFF;
+      color: $white;
     }
+
   }
 }

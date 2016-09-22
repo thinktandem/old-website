@@ -1,34 +1,34 @@
 #cta {
   -webkit-font-smoothing: antialiased;
-  background-color: #4BB5DD;
+  background-color: $brand-primary;
 
   .container {
-    border-top: 1px solid #ACE2F7;
+    border-top: 1px solid $brand-primary-lighter;
     padding: 4em 1em;
   }
 
   .header {
 
     a {
-      color: #333333;
+      color: $gray-dark;
       white-space: normal;
     }
 
     h3 {
       margin-top: 0;
       font-family: $lato;
-      color: #FFFFFF;
+      color: $white;
       line-height: 1em;
     }
   }
 
   .btn {
-    background-color: #FFCC4F;
+    background-color: $brand-warning;
     border-radius: 5px;
     font-weight: 500;
     text-transform: uppercase;
     padding: 1em;
-    margin: 2em 1em
+    margin: 2em 1em;
   }
 
 }

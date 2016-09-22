@@ -1,6 +1,5 @@
-*:focus {
-    outline: 0;
-}
+@include backgroundGradient($brand-primary-dark, $brand-primary-light);
+@include transition(all 0.2s linear);
 
 .button {
   -webkit-font-smoothing: antialiased;
@@ -10,57 +9,56 @@
   padding: 13px 32px;
   font-weight: 400;
   font-size: 17px;
-  color: #fff !important;
-  text-shadow: rgba(0,0,0,0.2) 0 -1px 0;
-  border: 0px;
+  color: $white;
+  text-shadow: rgba($gray-base, 0.2) 0 -1px 0;
+  border: nonepx;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px, inset rgba(255, 255, 255, 0.88) 0px 1px 3px -1px;
-  background-color: #4589E3;
-  @include background-gradient(#5DA4FF, #417BFF);
-
-  @include transition(all 0.2s linear);
+  box-shadow: rgba($gray-base, 0.3) 0 1px 2px, inset rgba($white, 0.88) 0 1px 3px -1px;
+  background-color: $brand-primary;
 
   &:hover {
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
+
   &:active {
-    box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.29);
+    box-shadow: inset 0 3px 3px rgba($gray-base, 0.29);
   }
 
   &.button-small {
-    padding: 10px 33px;
-    border: 1px solid #68A2EE;
+    padding: 10 33px;
+    border: 1px solid $brand-primary-light;
     font-size: 14px;
     font-weight: 500;
   }
 }
+
+@include transition(all 0.2s linear);
+
 .button-outline {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   vertical-align: middle;
   zoom: 1;
-  color: #fff;
+  color: $white;
   padding: 12px 31px;
-  border: 2px solid #fff;
+  border: 2px solid $white;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 400;
-  background: rgba(0, 0, 0, 0.15);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-
-  @include transition(all 0.2s linear);
+  background: rgba($gray-base, 0.15);
+  text-shadow: 1px 1px 1px rgba($gray-base, 0.1);
 
   &:hover {
     text-decoration: none;
-    color: #ddd;
-    border-color: #ddd;
+    color: $gray-ef;
+    border-color: $gray-ef;
   }
 }
 
 .button-clear {
   -webkit-font-smoothing: antialiased;
-  border: 0;
+  border: none;
   outline: none;
   padding: 1px;
   display: inline-block;
@@ -70,18 +68,18 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.075);
-  -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.075);
-  -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 1px 0 rgba($gray-base, 0.075);
+  -moz-box-shadow: 0 1px 0 rgba($gray-base, 0.075);
+  -ms-box-shadow: 0 1px 0 rgba($gray-base, 0.075);
+  -o-box-shadow: 0 1px 0 rgba($gray-base, 0.075);
+  box-shadow: 0 1px 0 rgba($gray-base, 0.075);
 
-  background: #adb2bb;
-  background: -webkit-linear-gradient(#ccd0d6, #adb2bb);
-  background: -moz-linear-gradient(#ccd0d6, #adb2bb);
-  background: -ms-linear-gradient(#ccd0d6, #adb2bb);
-  background: -o-linear-gradient(#ccd0d6, #adb2bb);
-  background: linear-gradient(#ccd0d6, #adb2bb);        
+  background: $gray;
+  background: -webkit-linear-gradient($gray-lighter, $gray);
+  background: -moz-linear-gradient($gray-lighter, $gray);
+  background: -ms-linear-gradient($gray-lighter, $gray);
+  background: -o-linear-gradient($gray-lighter, $gray);
+  background: linear-gradient($gray-lighter, $gray);
 
   span {
     display: block;
@@ -93,19 +91,19 @@
     border-radius: 4px;
     font-weight: bold;
 
-    color: #444;
-    text-shadow: 0 1px 0 white;
-    background: #eff1f4;
-    background: -webkit-linear-gradient(#f7f8fa, #eff1f4);
-    background: -moz-linear-gradient(#f7f8fa, #eff1f4);
-    background: -ms-linear-gradient(#f7f8fa, #eff1f4);
-    background: -o-linear-gradient(#f7f8fa, #eff1f4);
-    background: linear-gradient(#f7f8fa, #eff1f4);
-    -webkit-box-shadow: inset 0 1px 0 white;
-    -moz-box-shadow: inset 0 1px 0 white;
-    -ms-box-shadow: inset 0 1px 0 white;
-    -o-box-shadow: inset 0 1px 0 white;
-    box-shadow: inset 0 1px 0 white;
+    color: $gray;
+    text-shadow: 0 1px 0 $white;
+    background: $gray-ef;
+    background: -webkit-linear-gradient($gray-lighter, $gray-ef);
+    background: -moz-linear-gradient($gray-lighter, $gray-ef);
+    background: -ms-linear-gradient($gray-lighter, $gray-ef);
+    background: -o-linear-gradient($gray-lighter, $gray-ef);
+    background: linear-gradient($gray-lighter, $gray-ef);
+    -webkit-box-shadow: inset 0 1px 0 $white;
+    -moz-box-shadow: inset 0 1px 0 $white;
+    -ms-box-shadow: inset 0 1px 0 $white;
+    -o-box-shadow: inset 0 1px 0 $white;
+    box-shadow: inset 0 1px 0 $white;
   }
 
   &:hover {
@@ -114,26 +112,26 @@
 
   &:active,
   &.active {
-    background: #b5bac2;
-    background: -webkit-linear-gradient(#b5bac2, #b5bac2);
-    background: -moz-linear-gradient(#b5bac2, #b5bac2);
-    background: -ms-linear-gradient(#b5bac2, #b5bac2);
-    background: -o-linear-gradient(#b5bac2, #b5bac2);
-    background: linear-gradient(#b5bac2, #b5bac2);
+    background: $gray;
+    background: -webkit-linear-gradient($gray, $gray);
+    background: -moz-linear-gradient($gray, $gray);
+    background: -ms-linear-gradient($gray, $gray);
+    background: -o-linear-gradient($gray, $gray);
+    background: linear-gradient($gray, $gray);
 
     span {
-      color: #444;
-      background: #eff1f4;
-      background: -webkit-linear-gradient(#e6e8eb, #eff1f4);
-      background: -moz-linear-gradient(#e6e8eb, #eff1f4);
-      background: -ms-linear-gradient(#e6e8eb, #eff1f4);
-      background: -o-linear-gradient(#e6e8eb, #eff1f4);
-      background: linear-gradient(#e6e8eb, #eff1f4);
-      -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      -ms-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      -o-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-      box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+      color: $gray;
+      background: $gray-ef;
+      background: -webkit-linear-gradient($gray-lighter, $gray-ef);
+      background: -moz-linear-gradient($gray-lighter, $gray-ef);
+      background: -ms-linear-gradient($gray-lighter, $gray-ef);
+      background: -o-linear-gradient($gray-lighter, $gray-ef);
+      background: linear-gradient($gray-lighter, $gray-ef);
+      -webkit-box-shadow: inset 0 1px 0 rgba($gray-base, 0.1);
+      -moz-box-shadow: inset 0 1px 0 rgba($gray-base, 0.1);
+      -ms-box-shadow: inset 0 1px 0 rgba($gray-base, 0.1);
+      -o-box-shadow: inset 0 1px 0 rgba($gray-base, 0.1);
+      box-shadow: inset 0 1px 0 rgba($gray-base, 0.1);
     }
   }
 }
@@ -141,41 +139,42 @@
 
 /* form controls */
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+input {
+
+  @include placeholder {
+    font-weight: 300;
+  }
 
   &.form-control {
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 1px rgba($gray-base, 0.2);
+    -webkit-box-shadow: inset 0 1px 1px rgba($gray-base, 0.2);
+    -moz-box-shadow: inset 0 1px 1px rgba($gray-base, 0.2);
 
-    @include placeholder {
-      font-weight: 300;
-    }
     &:focus {
-      border-color: #98D2FF;
+      border-color: $gray-light;
       outline: 0;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px rgba(166, 205, 236, 0.6);
+      box-shadow: inset 0 1px 1px rgba($gray-base, 0.075), 0 0 6px rgba($brand-primary-light, 0.6);
     }
   }
 }
 
 textarea {
-  &.form-control {
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.2);
 
-    @include placeholder {
-      color: #B1B1B1;
-      font-weight: 400;
-      font-size: 14px;
-    }
+  @include placeholder {
+    color: $gray;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &.form-control {
+    box-shadow: inset 0 1px 1px rgba($gray-base, 0.2);
+    -webkit-box-shadow: inset 0 1px 1px rgba($gray-base, 0.2);
+    -moz-box-shadow: inset 0 1px 1px rgba($gray-base, 0.2);
+
     &:focus {
-      border-color: #98D2FF;
+      border-color: $gray-light;
       outline: 0;
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px rgba(166, 205, 236, 0.6);
+      box-shadow: inset 0 1px 1px rgba($gray-base, 0.075), 0 0 6px rgba($brand-primary-light, 0.6);
     }
   }
 }

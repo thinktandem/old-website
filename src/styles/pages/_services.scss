@@ -2,7 +2,8 @@
 
   .equation {
     .service {
-      border: 0;
+      border: none;
+
       .icon-header {
         padding-top: 0;
         padding-bottom: 0;
@@ -13,71 +14,76 @@
   .service-category {
 
     @media(max-width: 768px) {
-      margin-bottom: 40px;
+      margin-bottom: 40;
     }
 
     small {
-      padding-top: 40px;
-      color: #999;
+      padding-top: 40;
+      color: $gray-light;
       display: block;
     }
   }
 
-  .services-plus:after {
-    content: "";
-    content: " ";
-    width: 0;
-    height: 0;
-    border-bottom: 20px solid transparent;
-    border-top: 20px solid transparent;
-    border-left: 30px solid #CCC;
-    position: absolute;
-    top: 39px;
-    left: 150px;
+  .service-plus {
 
-    @media(max-width: 768px) {
-      visibility: hidden;
+    &::after {
+      content: ' ';
+      width: 0;
+      height: 0;
+      border-bottom: 20 solid transparent;
+      border-top: 20 solid transparent;
+      border-left: 30 solid $gray-light;
+      position: absolute;
+      top: 39px;
+      left: 150;
+
+      @media(max-width: 768px) {
+        visibility: hidden;
+      }
+
     }
-
   }
 
+
   .container {
-    border-bottom: 1px solid #efefef;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    border-bottom: 1px solid $gray-ef;
+    padding-bottom: 50;
+    padding-top: 50;
   }
 
   #service {
-    padding-bottom: 30px;
+    padding-bottom: 30;
   }
 
   .service-link {
 
     margin-right: 35px;
-    border-right: 1px solid #efefef;
+    border-right: 1px solid $gray-ef;
+    padding: 0.5em;
+
     @media (max-width: 768px) {
       border-right: none;
     }
-    padding: .5em;
+
     a {
-      color: #459CE7;
+      color: $brand-primary-dark;
       font-weight: 300;
       font-size: 1em;
       line-height: 1;
-    }
 
-    a:hover {
-      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
 }
 
-  .icon-header {
-    a {
-      width: 130px;
-      display: inline-block;
-      text-align: center;
-      margin-bottom: .5em;
-    }
+.icon-header {
+  a {
+    width: 130;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0.5em;
   }
+}
