@@ -1,0 +1,28 @@
+#dockerauth {
+  -webkit-font-smoothing: antialiased;
+  background-color: #4BB5DD;
+
+  .container {
+    border-top: 1px solid #ACE2F7;
+    padding: 2em 0;
+    color: #ACE2F7;
+
+    a {
+      color: #333333;
+      white-space: normal;
+    }
+
+    h3 {
+      margin-top: 0;
+      font-family: $lato;
+      color: #FFFFFF;
+      line-height: 1em;
+    }
+
+    .plug {
+      margin-top: 2.25em;
+    }
+
+  }
+
+}
