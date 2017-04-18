@@ -16,11 +16,6 @@ nav {
   display: block;
 }
 
-canvas {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
 a {
   background-color: transparent;
 }
@@ -743,10 +738,6 @@ a {
 
 body {
   font-size: 22px;
-}
-
-canvas.particles-js-canvas-el {
-  position: absolute;
 }
 
 .icon-wrapper {
